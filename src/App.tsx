@@ -53,7 +53,7 @@ function App() {
         </div>
       </div>
 
-      <div className="mt-12 w-full max-w-3xl px-4 bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center">
+      <div className="mb-10 mt-10 w-full max-w-3xl px-4 bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center">
         <h2 className="text-2xl font-semibold text-white mb-4 text-center">Tech Stack</h2>
         <div className="flex flex-wrap justify-center gap-6">
           {techStack.map((tech) => (
