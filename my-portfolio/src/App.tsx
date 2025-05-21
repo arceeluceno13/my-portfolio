@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import assets from './assets/NoBg4.png'
 
 function App() {
