@@ -34,7 +34,7 @@ function App() {
       <div className="mt-10 w-full max-w-4xl px-4">
         <h2 className="text-2xl font-semibold text-white mb-6 text-center">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {projects.map((proj) => (
+        {projects.map((proj) => (
             <div key={proj.title} className="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="w-16 h-16 bg-gray-700 rounded-full mb-4 flex items-center justify-center text-white text-xl">
                 {proj.icon}
