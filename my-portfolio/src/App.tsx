@@ -2,8 +2,6 @@ import { useState } from 'react'
 import assets from './assets/NoBg4.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='flex flex-col items-center justify-center h-screen bg-gradient-to-r from-gray-900 via-gray-700 to-black'>
         <img
@@ -60,7 +58,7 @@ function App() {
 
       </div>
 
-      
+
     </div>
   )
 }
