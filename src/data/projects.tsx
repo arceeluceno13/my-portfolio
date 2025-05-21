@@ -1,4 +1,4 @@
-const projects = [
+const project = [
   {
     icon: "🌐",
     title: "Portfolio Website",
@@ -22,4 +22,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default project;
