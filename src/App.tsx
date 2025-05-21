@@ -1,8 +1,7 @@
 import assets from './assets/NoBg4.png'
 import projects from './data/projects'
-import techStack from './data/techStack'
 import socials from './data/socials'
-
+import techStack from './data/techStack'
 
 function App() {
   return (
@@ -17,16 +16,16 @@ function App() {
         Aspiring Front-End Developer passionate about building beautiful and functional web experiences.
       </p>
       <div className="flex gap-4 mb-10">
-        {socials.map((social) => (
+        {socials.map((s) => (
           <a
-            key={social.label}
-            href={social.href}
+            key={s.label}
+            href={s.href}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"
-            aria-label={social.label}
+            aria-label={s.label}
           >
-            {social.icon}
+            {s.icon}
           </a>
         ))}
       </div>
@@ -34,7 +33,7 @@ function App() {
       <div className="mt-10 w-full max-w-4xl px-4">
         <h2 className="text-2xl font-semibold text-white mb-6 text-center">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projects.map((proj) => (
+          {projects.map((proj) => (
             <div key={proj.title} className="bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col items-center">
               <div className="w-16 h-16 bg-gray-700 rounded-full mb-4 flex items-center justify-center text-white text-xl">
                 {proj.icon}
