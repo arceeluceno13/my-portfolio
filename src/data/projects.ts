@@ -8,7 +8,7 @@ const projects = [
   },
   {
     icon: "📲",
-    title: "GAG RealTime Stock - Grow A Garden",
+    title: "Cross-Platform App",
     desc: "GAG RealTime Stock is a real-time stock tracking app for Weather, Seed, Gear, and Egg stock, built with Ionic React and Capacitor. It features a responsive UI, dark/light mode support, and real-time updates for in-game stock data.",
     link: "https://github.com/arceeluceno13/gag-notif",
     linkLabel: "View Code",
