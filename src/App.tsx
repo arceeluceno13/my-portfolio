@@ -2,35 +2,39 @@ import assets from './assets/NoBg4.png'
 import projects from './data/projects'
 import socials from './data/socials'
 import techStack from './data/techStack'
+import ParticlesComponent from './components/Particles'
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-700 to-black px-2">
-      <img
-        src={assets}
-        className="logo rounded-full overflow-hidden w-40 h-40 sm:w-60 sm:h-80 object-cover mb-4"
-        alt="Profile"
-      />
-      <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 text-center">Arcee Luceno</h2>
-      <p className="text-gray-300 mb-4 text-center max-w-xs sm:max-w-md">
-        Aspiring Front-End Developer passionate about building beautiful and functional web experiences.
-      </p>
-      <div className="flex gap-4 mb-10 flex-wrap justify-center">
-        {socials.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
-            aria-label={s.label}
-          >
-            {s.icon}
-          </a>
-        ))}
+    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-700 to-black px-2">
+      <ParticlesComponent id="particles" />
+      <div className="relative z-10 flex flex-col items-center">
+        <img
+          src={assets}
+          className="logo rounded-full overflow-hidden w-40 h-40 sm:w-60 sm:h-80 object-cover mb-4"
+          alt="Profile"
+        />
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 text-center">Arcee Luceno</h2>
+        <p className="text-gray-300 mb-4 text-center max-w-xs sm:max-w-md">
+          Aspiring Front-End Developer passionate about building beautiful and functional web experiences.
+        </p>
+        <div className="flex gap-4 mb-10 flex-wrap justify-center">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition"
+              aria-label={s.label}
+            >
+              {s.icon}
+            </a>
+          ))}
+        </div>
       </div>
 
-      <div className="mt-10 w-full max-w-4xl px-2 sm:px-4">
+      <div className="relative z-10 mt-10 w-full max-w-4xl px-2 sm:px-4">
         <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6 text-center">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((proj) => (
@@ -53,7 +57,7 @@ function App() {
         </div>
       </div>
 
-      <div className="mb-10 mt-10 w-full max-w-3xl px-2 sm:px-4 bg-gray-800 rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center">
+      <div className="relative z-10 mb-10 mt-10 w-full max-w-3xl px-2 sm:px-4 bg-gray-800 rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center">
         <h2 className="text-xl sm:text-2xl font-semibold text-white mb-4 text-center">Tech Stack</h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {techStack.map((tech) => (
