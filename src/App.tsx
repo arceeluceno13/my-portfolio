@@ -2,12 +2,12 @@ import assets from './assets/NoBg4.png'
 import projects from './data/projects'
 import socials from './data/socials'
 import techStack from './data/techStack'
-// import ParticlesComponent from './components/Particles'
+import ParticlesComponent from './components/Particles'
 
 function App() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-700 to-black px-2">
-      {/* <ParticlesComponent id="particles" /> */}
+      <ParticlesComponent id="particles" />
       <div className="relative z-10 flex flex-col items-center">
         <img
           src={assets}
